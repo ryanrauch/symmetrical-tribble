@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour {
 
     private void HandleBombTriggerCollision(Collider collider)
     {
-        GameManager.instance.triggerBomb();
+        GameManager.instance.triggerBomb(collider);
     }
 
     void HandleGoldenBallPickup(Collider other)
